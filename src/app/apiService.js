@@ -2,7 +2,8 @@ import axios from 'axios';
 import { BASE_URL } from "./config";
 
 const apiService = axios.create({
-	baseURL: process.env.REACT_APP_BACKEND_API,
+	// baseURL: process.env.REACT_APP_BACKEND_API,
+	baseURL: BASE_URL,
 });
 
 apiService.interceptors.request.use(
